@@ -1,19 +1,17 @@
-# dotfiles #
+# Dotfiles
 My various dotfiles.
 
-## setup ##
+## Managing dotfiles with [GNU Stow](https://www.gnu.org/software/stow/)
 
-Simple dotfile management with gnu stow and git.
+### Install
 
-from home directory
-```git clone https://github.com/jmhayes3/dotfiles.git
+`brew install stow`
+
+### Usage
+
 ```
-
-change to dotfiles directory
-
-```cd ~/dotfiles
+cd ~
+git clone https://github.com/jmhayes3/dotfiles.git
+cd ~/dotfiles
+stow vim tmux bash inputrc git
 ```
-
-install dotfiles(symlink files to `~` using stow)
-
-```stow vim tmux bash inputrc git
