@@ -88,3 +88,6 @@ autocmd FileType cpp setlocal commentstring=//%s
 
 " ultisnips plugin
 let g:UltiSnipsExpandTrigger="<c-j>"
+
+" add fzf to &runtimepath
+set rtp+=/usr/local/opt/fzf
