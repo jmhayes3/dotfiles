@@ -2,16 +2,6 @@
 
 set -o vi
 
-# virtualenvwrapper
-# source /anaconda/bin/virtualenvwrapper.sh
-
-# display hidden files in fzf
-# export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g "" --silent'
-# export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -g "" --silent'
-
-# source fzf
-# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
-
 # disable terminal suspend/resume
 stty -ixon
 
@@ -38,10 +28,6 @@ HISTFILESIZE=1000
 
 #if [ -x /usr/bin/vim ]; then
 #    export VISUAL=/usr/bin/vim
-#fi
-
-#if [ -x /Applications/Google\ Chrome.app ]; then
-#    export BROWSER=/Applications/Google\ Chrome.app
 #fi
 
 alias ls='ls -h'
