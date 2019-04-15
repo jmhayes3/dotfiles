@@ -61,6 +61,9 @@ autocmd FileType markdown setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType javascript setlocal tabstop=2 softtabstop=2 shiftwidth=2
 autocmd FileType cpp setlocal expandtab tabstop=2 softtabstop=2 shiftwidth=2
 
+" set textwidth for specific filetypes
+" autocmd BufReadPre *.py setlocal textwidth=79
+
 " abbreviations
 cnoreabbrev W! w!
 cnoreabbrev Q! q!
