@@ -24,9 +24,9 @@ HISTFILESIZE=1000
 
 # fzf settings
 # use fd instead of find as default search command and include hidden files
-export FZF_DEFAULT_COMMAND='fd --type f --hidden'
+# export FZF_DEFAULT_COMMAND='fd --type f --hidden'
 # show hidden files in search when using CTRL-T
-export FZF_CTRL_T_COMMAND='fd --type f --hidden'
+# export FZF_CTRL_T_COMMAND='fd --type f --hidden'
 
 # prompt
 # export PS1="\[\033[00;39m\]\[\033[00;39m\]\u\[\033[00;39m\]@\[\033[00;39m\]\h\\\
