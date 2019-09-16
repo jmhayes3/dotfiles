@@ -22,20 +22,6 @@ HISTIGNORE="history*:fc*:exit"
 HISTSIZE=1000
 HISTFILESIZE=1000
 
-# fzf settings
-# use fd instead of find as default search command and include hidden files
-# export FZF_DEFAULT_COMMAND='fd --type f --hidden'
-# show hidden files in search when using CTRL-T
-# export FZF_CTRL_T_COMMAND='fd --type f --hidden'
-
-# prompt
-# export PS1="\[\033[00;39m\]\[\033[00;39m\]\u\[\033[00;39m\]@\[\033[00;39m\]\h\\\
-# [\033[00;39m\][\[\033[00;39m\]\w\[\033[00;39m\]]\[\033[00;39m\]$ \[\033[00m\]"
-
-#if [ -x /usr/bin/vim ]; then
-#    export VISUAL=/usr/bin/vim
-#fi
-
 alias ls='ls -h'
 alias ll='ls -lh'
 alias la='ls -Alh'
@@ -61,11 +47,11 @@ alias fgrep='fgrep --color=auto'
 alias c='clear'
 alias cls='clear'
 alias ping='ping -c 3'
-alias dmesg='dmesg --color'
+# alias dmesg='dmesg --color' # linux
 alias tmux='tmux -2'
 # alias psg='ps -aux | grep -v grep | grep -i -e VSZ -e' # gnu
 alias psg='ps aux | grep -v grep | grep -i -e VSZ -e' # bsd
-alias o='open'
+alias o='open' # macOS
 
 function download() {
   curl -O $1
@@ -73,17 +59,17 @@ function download() {
 
 alias dl='download'
 
-# recursively encrypt files in directory
+# encrypt directory
 function encdir() {
     gpgdir -e $1 -S --Wipe
 }
 
-# recursively decrypt files in directory
+# decrypt directory
 function decdir() {
     gpgdir -d $1 -S
 }
 
-# archive file or folder
+# archive file or directory
 function compress()
 {
   dirPriorToExe=`pwd`
@@ -151,7 +137,7 @@ function compress()
   echo "###########################################"
 }
 
-# Extract archives - use: extract <file>
+# extract files from archive
 function extract()
 {
   local remove_archive
