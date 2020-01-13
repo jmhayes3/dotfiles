@@ -8,6 +8,7 @@
 	ci = commit
 	st = status
 	di = diff
+	lg = log
 [user]
 	name = jmhayes3
 	email = jmhayes3@uh.edu
