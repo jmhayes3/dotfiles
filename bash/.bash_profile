@@ -12,20 +12,22 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 # java
 # export JAVA_HOME=$(/usr/libexec/java_home)
-export JAVA_HOME=$(/usr/libexec/java_home -v 11) # select specific version
+# export JAVA_HOME=$(/usr/libexec/java_home -v 11) # select specific version
 
 # javafx modules path for java versions >10
-export PATH_TO_FX=$HOME/.local/share/javafx-sdk-11.0.2/lib
+# export PATH_TO_FX=$HOME/.local/share/javafx-sdk-11.0.2/lib
 
 # javafx jmods path for java versions >10
 # export PATH_TO_FX_MODS=$HOME/.local/share/javafx-jmods-11
 
 # fzf
-# use fd instead of find as search command and include hidden files
-export FZF_DEFAULT_COMMAND='fd --type f --hidden'
+# use fd instead of find as search command
+# export FZF_DEFAULT_COMMAND='fd --type f'
+export FZF_DEFAULT_COMMAND='fd --type f --hidden' # include hidden files
 
-# use fd and include hidden files in search when using CTRL-T
-export FZF_CTRL_T_COMMAND='fd --type f --hidden'
+# use fd in search when using CTRL-T
+# export FZF_CTRL_T_COMMAND='fd --type f'
+export FZF_CTRL_T_COMMAND='fd --type f --hidden' # include hidden files
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
